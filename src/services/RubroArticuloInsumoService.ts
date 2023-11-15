@@ -34,7 +34,7 @@ export const RubroArticuloInsumoService = {
     },
 
     updateRubroArticuloInsumo: async (id:number,rubroArticuloInsumo:RubroArticuloInsumo):Promise<RubroArticuloInsumo>=>{
-        const response = await fetch( `${BASE_URL}/api/v1/rubroArticuloInsumo`,{
+        const response = await fetch( `${BASE_URL}/api/v1/rubroArticuloInsumo/${id}`,{
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ export const RubroArticuloInsumoService = {
     },
 
     deleteRubroArticuloInsumo: async (id:number):Promise<void>=>{
-        await fetch( `${BASE_URL}/api/v1/rubroArticuloInsumo`,{
+        await fetch( `${BASE_URL}/api/v1/rubroArticuloInsumo/${id}`,{
             method: "DELETE",
       
     });

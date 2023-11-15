@@ -1,0 +1,632 @@
+body{
+    background-color: #FFF3DC;
+    font-family: sans-serif;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+
+ /*--------------------------MODAL DE REGISTRARSE-----------------------------*/
+
+
+  #contenedorBotonesRegistrarseIngresar{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  #fondoBotonesRegistrarseIngresar{
+    display: flex;
+    gap: 40PX;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.36);
+  }
+
+  .botonParteSuperiorFormulario{
+    font-family: inherit;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #contenedorCamposFormulario{
+    background-color: #E9E6E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  #contenedorBotonRegistrarse{
+    display: flex;
+    justify-content: center;
+  }
+
+  #botonRegistrarse{
+    background-color: #D55039;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.114);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  /*--------------------------FONDO, TEXTO E IMAGEN HAMBURGUESA-----------------------------*/
+
+.fondo {
+  background-image: url("https://github.com/Facustriker/El-buen-sabor---Grupo-Front-eo/blob/main/Assets/mm.png?raw=true");
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 96px;
+  padding-right: 96px;
+  gap: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#botonIniciotext{
+  background-color: #D55039;
+  color:#FFF3DC;
+  border: none;
+  padding: 10px; 
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.107);
+}
+
+#TextoCabecera{
+  font-size: 50px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.contenedorTextoBoton{
+  display: flex;
+  flex-direction: column;
+  color: #FFF3DC;
+}
+
+#botonIniciotext:hover{
+  background-color:#953A3A;
+  cursor: pointer;
+}
+/* -------------------------LINEA BORDO CON CAJA DE TEXTO 'CATEGORIAS'-----------------------------------------*/
+
+
+#lineaBordoCategoria{
+  height: 15px;
+  background-color: #953A3A;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#textoCategorias{
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 5px solid #953A3A;
+  background-color: #FFF3DC;
+  color: #953A3A;
+  font-size: 30px;
+  font-weight:900;
+  border-radius: 4px;
+}
+   
+/* ----------------ESTILOS IMAGENES HAMBURGUESAS, PIZZAS, PAPAS FRITAS Y BEBIDAS.---------------------------------*/
+
+
+
+
+#contenedorImagenesComida{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* ------------------------------------------HAMBURGUESA-------------------------------------------*/
+
+#botonIconoHamburguesa{
+  border: none;
+  background-color:#D55039;
+  border-radius: 12px;
+  width: 260px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  transform: .3s ease all;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.227);
+}
+
+#botonIconoHamburguesa:hover{
+  background-color: #953A3A;
+  transition: .3s ease-in-out all;
+  transform-origin: center;
+}
+
+#botonIconoHamburguesa::after{
+  background: #E9E6E6;
+  width: 80%;
+  height: 80%;
+  content:"";
+  border-radius: 100px;
+}
+
+#botonIconoHamburguesa:hover::after{
+  position: absolute;
+  z-index: 1;
+  left:15 px;
+  top: 5px;
+  right:25px;
+  transition: .3s ease-in-out all;
+  transform-origin: center;
+}
+
+#textoIconoHamburguesa{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-style: inherit;
+  font-size: 25px;
+  color: #FFF3DC;
+  font-weight:900;
+}
+
+#imagenHamburguesaDIV{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.imagenHamburguesa{
+  width: 150px;
+  height: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ------------------------------------------PIZZA-------------------------------------------*/
+
+#botonIconoPizza{
+  border: none;
+  background-color:#D55039;
+  border-radius: 12px;
+  width: 260px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.227);
+}
+
+#botonIconoPizza:hover{
+  background-color: #953A3A;
+  transition: .3s ease-in-out all;
+  transform-origin: center;
+}
+
+#botonIconoPizza::after{
+  background: #E9E6E6;
+  width: 80%;
+  height: 80%;
+  content:"";
+  border-radius: 100px;
+}
+
+#botonIconoPizza:hover::after{
+  position: absolute;
+  z-index: 1;
+  left:15 px;
+  top: 5px;
+  right:25px;
+  transition: .3s ease-in-out all;
+  transform-origin: center;
+}
+
+#textoIconoPizza{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-style: inherit;
+  font-size: 25px;
+  color: #FFF3DC;
+  font-weight:900;
+  justify-content: center;
+}
+
+#imagenPizzaDIV{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.imagenPizza{
+  width: 170px;
+  height: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ------------------------------------------PAPAS FRITAS-------------------------------------------*/
+
+#botonIconoPapas{
+  border: none;
+  background-color:#D55039;
+  border-radius: 12px;
+  width: 260px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.227);
+}
+
+#botonIconoPapas:hover{
+  background-color: #953A3A;
+  transition: .3s ease-in-out all;
+  transform-origin: center;
+}
+
+#botonIconoPapas::after{
+  background: #E9E6E6;
+  width: 80%;
+  height: 80%;
+  content:"";
+  border-radius: 100px;
+}
+
+#botonIconoPapas:hover::after{
+  position: absolute;
+  z-index: 1;
+  left:15 px;
+  top: 5px;
+  right:25px;
+  transition: .3s ease-in-out all;
+  transform-origin: center;
+}
+
+#textoIconoPapas{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-style: inherit;
+  font-size: 25px;
+  color: #FFF3DC;
+  font-weight:900;
+  justify-content: center;
+}
+
+#imagenPapasDIV{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.imagenPapas{
+  width: 100px;
+  height: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ------------------------------------------BEBIDAS-------------------------------------------*/
+
+#botonIconoBebidas{
+  border: none;
+  background-color:#D55039;
+  border-radius: 12px;
+  width: 260px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.227);
+}
+
+#botonIconoBebidas:hover{
+  background-color: #953A3A;
+  transition: .3s ease-in-out all;
+  transform-origin: center;
+}
+
+#botonIconoBebidas::after{
+  background: #E9E6E6;
+  width: 80%;
+  height: 80%;
+  content:"";
+  border-radius: 100px;
+}
+
+#botonIconoBebidas:hover::after{
+  position: absolute;
+  z-index: 1;
+  left:15 px;
+  top: 5px;
+  right:25px;
+  transition: .3s ease-in-out all;
+  transform-origin: center;
+}
+
+#textoIconoBebidas{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-style: inherit;
+  font-size: 25px;
+  color: #FFF3DC;
+  font-weight:900;
+  justify-content: center;
+}
+
+#imagenBebidasDIV{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.imagenBebidas{
+  width: 120px;
+  height: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+.lineaBordoDivisoria{                   /* LINEA BORDO QUE SEPARA LAS CATEGORIAS (HAMBURGUESAS, PIZZAS) DE */
+  height: 15px;                       /* LA INFORMACION (ATENCION AL CLIENTE, ENVIOS, RETIRO, ETC.) */
+  background-color: #953A3A; 
+}
+
+/* ----------------ESTILOS IMAGENES ENVIOS DOMICILIO, ATENCION AL CLIENTE, RETIRO Y CONTACTANOS---------------------------*/
+
+#contenedorImagenesInformacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+
+/* ------------------------------------------ENVIOS A DOMICILIO-------------------------------------------*/
+
+#contenedorEnvioDomicilio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contenedorIconoDomicilio{
+  display: flex;
+  justify-content: center;
+}
+
+#IconoEnvioDomicilio{
+  background-color: #D55039;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenEnvioDomicilio{
+  display: flex;
+  padding-top: 30px;
+  width: 75px;
+  height: 100px;
+}
+
+#TituloEnvioDomicilio{
+  display: flex;
+  font-style: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  justify-content: center;
+  color:#953A3A;
+}
+
+#textoEnvioDomicilio{
+  font-style: inherit;
+  font-size: 11px;
+  color:#953A3A;
+}
+
+/* ------------------------------------------ATENCION AL CLIENTE-------------------------------------------*/
+
+#contenedorAtencionCliente{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contenedorIconoAtencionCliente{
+  display: flex;
+  justify-content: center;
+}
+
+#IconoAtencionCliente{
+  background-color: #D55039;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenAtencionCliente{
+  display: flex;
+  padding-top: 22px;
+  width: 75px;
+  height: 100px;
+}
+
+#TituloAtencionCliente{
+  display: flex;
+  font-style: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  justify-content: center;
+  color:#953A3A;
+}
+
+#textoAtencionCliente{
+  font-style: inherit;
+  font-size: 11px;
+  color:#953A3A;
+}
+
+/* ------------------------------------------RETIRO EN CIUDAD-------------------------------------------*/
+
+#contenedorRetiroCiudad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contenedorIconoRetiroCiudad{
+  display: flex;
+  justify-content: center;
+}
+
+#IconoRetiroCiudad{
+  background-color: #D55039;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenRetiroCiudad{
+  display: flex;
+  padding-top: 25px;
+  width: 75px;
+  height: 100px;
+}
+
+#TituloRetiroCiudad{
+  display: flex;
+  font-style: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  justify-content: center;
+  color:#953A3A;
+}
+
+#textoRetiroCiudad{
+  font-style: inherit;
+  font-size: 11px;
+  color:#953A3A;
+}
+
+/* ------------------------------------------CONTACTANOS-------------------------------------------*/
+
+#contenedorContactanos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contenedorIconoContactanos{
+  display: flex;
+  justify-content: center;
+}
+
+#IconoContactanos{
+  background-color: #D55039;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenContactanos{
+  display: flex;
+  padding-top: 25px;
+  width: 80px;
+  height: 100px;
+}
+
+#TituloContactanos{
+  display: flex;
+  font-style: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  justify-content: center;
+  color:#953A3A;
+}
+
+#textoContactanos{
+  font-style: inherit;
+  font-size: 11px;
+  color:#953A3A;
+}
+
+/*----------------------------CUANDO LA PANTALLA SEA MENOR A 700PX LLAMA A MEDIA QUERY Y HACE:--------------------------*/
+
+  @media (max-width:700px){ 
+
+    .fondo{
+      flex-direction: column;
+      gap: 0px;
+      align-items: center;
+  }
+
+  #contenedorImagenesComida{
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #contenedorImagenesInformacion{
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .container{
+      align-items: center;
+  }
+
+  }

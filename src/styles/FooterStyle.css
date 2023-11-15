@@ -1,0 +1,174 @@
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    background-color: #D55039;
+    flex-direction: column;
+  }
+  
+  .lineaBordoFooter{
+    height: 15px;
+    background-color: #953A3A;
+    justify-content: center;
+    flex-direction: row; 
+  }
+  
+  .lineaNegraFooter{
+    height: 3px;
+    background-color: #00000038;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .button {
+    background:none;
+    border: none;
+    color: #FFF3DC;
+    text-align: center;
+    font-style: inherit;
+    font-size: 25px;
+  }
+  
+  .buttonAb{
+    font-size: 18px;
+    margin: 15px 32px;
+    cursor: pointer;
+  }
+  
+  .buttonUp{
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .buttonApp{
+    font-size: 20px !important;
+    cursor: pointer;
+  }
+  
+  .button:hover{
+    color: white;
+    text-decoration-line: underline;
+  }
+  
+  .texto{
+    background:none;
+    border: none;
+    color: #FFF3DC;
+    font-style: inherit;
+    
+  }
+  
+  
+  /* ---------------------PARTE 1 (COLUMNA APPS, LOGO Y COLUMNA REDES SOCIALES)-------------------------------------------*/
+  
+  .parte1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 96px;
+    padding-right: 96px;
+    align-items: center;
+  }
+  
+  
+  /* ------------------------------------------CONTENEDOR APP-------------------------------------------*/
+  
+  #APPcontainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+  #colTextoApp{
+    display: flex;
+    flex-direction: column;
+    color: #FFF3DC;
+    font-size: 14px;
+    font-style: inherit;
+  }
+  
+  #Apps{
+    display: flex;
+  }
+  
+  .imagePlay{
+    width: 90px;
+    height: 35px;
+  }
+  
+  .imageApple{
+    width: 90px;
+    height: 35px;
+  }
+  
+  /* ------------------------------------------CONTENEDOR LOGO-------------------------------------------*/
+  
+  #logoBSFooter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  /* ------------------------------------------CONTENEDOR REDES SOCIALES-------------------------------------------*/
+  
+  #socialContenedor{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+  #imagenNombreContenedor{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #instagram{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #facebook{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .imageInsta{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .imageFace{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  /* -----------------------------------------PARTE 2 (BOTONES INFERIORES)-------------------------------------------*/
+  
+  .parte2{
+    margin-bottom: 1em;
+  }
+  
+  #abajo{
+    color: #FFF3DC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 66px;
+    color: #FFF3DC;
+  }
+
+
+    /*----------------------------CUANDO LA PANTALLA SEA MENOR A 700PX LLAMA A MEDIA QUERY Y HACE:--------------------------*/
+
+    @media (max-width:700px){ 
+
+        .parte1{
+            flex-direction: column;
+        }
+
+        
+    }
